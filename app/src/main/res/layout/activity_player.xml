@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aclyyx.repeater.PlayerActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    </LinearLayout>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/PlayProgressInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"/>
+
+    <SeekBar
+        android:id="@+id/SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TableRow android:layout_weight="1">
+            <Button android:id="@+id/BtnPrev" android:text="PREV" style="@style/CtrlButton"/>
+            <Button android:id="@+id/BtnPrv5" android:text="PREV 5s" style="@style/CtrlButton"/>
+            <Button android:id="@+id/BtnNxt5" android:text="NEXT 5s" style="@style/CtrlButton"/>
+            <Button android:id="@+id/BtnNext" android:text="NEXT" style="@style/CtrlButton"/>
+            <Button android:id="@+id/BtnPlay" android:text="PLAY" style="@style/CtrlButton"/>
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <Button android:id="@+id/BtnSetA" android:text="SET A" style="@style/CtrlButton"/>
+            <Button android:id="@+id/BtnSetB" android:text="SET B" style="@style/CtrlButton"/>
+            <Button android:id="@+id/BtnRept" android:text="REPEAT" style="@style/CtrlButton"/>
+            <Button android:id="@+id/BtnPaus" android:text="PAUSE" style="@style/CtrlButton"/>
+            <Button android:id="@+id/BtnStop" android:text="STOP" style="@style/CtrlButton"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
