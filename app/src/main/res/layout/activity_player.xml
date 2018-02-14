@@ -5,12 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.aclyyx.repeater.PlayerActivity">
+    tools:context="com.aclyyx.repeater.activity.PlayerActivity">
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="30dp">
+        android:gravity="right|center_vertical"
+        android:background="#BBB"
+        android:layout_height="55dp">
+
+        <Button
+            android:id="@+id/BtnAddMp3"
+            android:text="+"
+            android:gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
     </LinearLayout>
 
     <TextView
@@ -38,15 +48,13 @@
             <Button android:id="@+id/BtnPrv5" android:text="PREV 5s" style="@style/CtrlButton"/>
             <Button android:id="@+id/BtnNxt5" android:text="NEXT 5s" style="@style/CtrlButton"/>
             <Button android:id="@+id/BtnNext" android:text="NEXT" style="@style/CtrlButton"/>
-            <Button android:id="@+id/BtnPlay" android:text="PLAY" style="@style/CtrlButton"/>
         </TableRow>
 
         <TableRow android:layout_weight="1">
-            <Button android:id="@+id/BtnSetA" android:text="SET A" style="@style/CtrlButton"/>
-            <Button android:id="@+id/BtnSetB" android:text="SET B" style="@style/CtrlButton"/>
+            <CheckBox android:id="@+id/BtnSetA" android:text="SET A" style="@style/CtrlButton"/>
+            <CheckBox android:id="@+id/BtnSetB" android:text="SET B" style="@style/CtrlButton"/>
             <Button android:id="@+id/BtnRept" android:text="REPEAT" style="@style/CtrlButton"/>
-            <Button android:id="@+id/BtnPaus" android:text="PAUSE" style="@style/CtrlButton"/>
-            <Button android:id="@+id/BtnStop" android:text="STOP" style="@style/CtrlButton"/>
+            <CheckBox android:id="@+id/BtnPlay" android:text="PLAY" style="@style/CtrlButton"/>
         </TableRow>
 
     </TableLayout>
